@@ -6,7 +6,7 @@ function testRandom() {
         method: 'GET',
         headers: myHeaders
     };
-    let req = new Request('https://undeadhd.github.io/russian_names.json');
+    let req = new Request('russian_names.json');
 
     fetch(req, {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
