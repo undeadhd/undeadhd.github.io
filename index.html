@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Бот ферма</title>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <p id="paragraph"></p>
+        <p id="name"></p>
+        <input type="file" name="file" id="file">
+        <button onclick="testRandom()">Тест</button>
+        <script src="bot.js"></script>
+        <div id="app">
+            {{message}}
+        </div>
+        <script>
+            var app = new Vue({ 
+                el: '#app',
+                data: {
+                    message: 'привет'
+                }
+            })
+        </script>
+    </body>
+</html>
