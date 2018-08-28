@@ -6,9 +6,8 @@ function testRandom() {
         method: 'GET',
         headers: myHeaders
     };
-    let req = new Request('russian_names.json');
 
-    fetch(req, {
+    fetch('russian_names.json', {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
         referrer: "no-referrer", // no-referrer, *client
         // body: JSON.stringify(data), // body data type must match "Content-Type" header
