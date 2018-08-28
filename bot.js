@@ -6,9 +6,8 @@ function testRandom() {
         method: 'GET',
         headers: myHeaders
     };
-    let req = new Request('http//:undeadhd.github.io/russian_names.json');
+    let req = new Request('https//:undeadhd.github.io/russian_names.json');
 
-    let resp;
     fetch(req, {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
         referrer: "no-referrer", // no-referrer, *client
@@ -18,19 +17,4 @@ function testRandom() {
     .then(json => json.title)
     .then(title => document.getElementById("paragraph").innerHTML = title);
 
-    fetch("russian_names.json")
-    .then(reponse => console.log(response));
-    document.getElementById("namesFile");
-
 }
-
-function readNamesFile() {
-    let text = file.result;
-}
-
-var app = new Vue({ 
-    el: '#app',
-    data: {
-        message: 'привет'
-    }
-})
