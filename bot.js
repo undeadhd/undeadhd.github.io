@@ -6,7 +6,7 @@ function testRandom() {
         method: 'GET',
         headers: myHeaders
     };
-    let req = new Request('http://jsonplaceholder.typicode.com/todos/2');
+    let req = new Request('http//:undeadhd.github.io/russian_names.json');
 
     let resp;
     fetch(req, {
